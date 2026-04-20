@@ -1,0 +1,62 @@
+[
+  {
+    "user_id": 0,
+    "user_name": "Alex_Dasher",
+    "bio": "Experienced DoorDash Dasher in SF Downtown. 2 years of delivery experience. Prefers morning shifts. Moderate price sensitivity — will accept $2+ incentives in my home zone but need $3+ to travel to other zones. Daily income goal: $100.",
+    "persona": "veteran_morning_dasher"
+  },
+  {
+    "user_id": 1,
+    "user_name": "Jordan_Dasher",
+    "bio": "New DoorDash Dasher in Oakland. Just started 2 weeks ago. Very price sensitive — will accept almost any incentive to build experience. Flexible schedule. Willing to work any zone. Daily income goal: $60.",
+    "persona": "new_flexible_dasher"
+  },
+  {
+    "user_id": 2,
+    "user_name": "Taylor_Dasher",
+    "bio": "Part-time DoorDash Dasher in San Jose. Works evenings after my day job. Low price sensitivity — only takes high-value incentives ($4+). Sticks to South Bay zones. Daily income goal: $40.",
+    "persona": "evening_selective_dasher"
+  },
+  {
+    "user_id": 3,
+    "user_name": "Morgan_Dasher",
+    "bio": "Full-time Dasher in Berkeley. 6 months experience. Moderate elasticity. Prefers East Bay but will cross to SF for good incentives ($3+). Watches what other dashers do — tends to follow the crowd. Daily income goal: $120.",
+    "persona": "social_fulltime_dasher"
+  },
+  {
+    "user_id": 4,
+    "user_name": "Casey_Dasher",
+    "bio": "Weekend warrior Dasher in Palo Alto. Only works Saturday and Sunday. Very strategic — compares zone incentives before accepting. High risk tolerance, will travel far for the right price. Daily income goal: $80.",
+    "persona": "weekend_strategic_dasher"
+  },
+  {
+    "user_id": 5,
+    "user_name": "Riley_Dasher",
+    "bio": "Experienced Dasher in Mountain View. 1 year tenure. Gets fatigued quickly — after 4 offers in a day, starts rejecting everything. Prefers afternoon shifts. Moderate income needs. Daily income goal: $70.",
+    "persona": "fatigable_afternoon_dasher"
+  },
+  {
+    "user_id": 6,
+    "user_name": "Quinn_Dasher",
+    "bio": "Multi-app Dasher (DoorDash + Uber Eats) in SF Mission. Compares incentives across platforms. Will only accept DoorDash offers if they beat the Uber Eats alternative. High elasticity. Daily income goal: $110.",
+    "persona": "multiapp_competitive_dasher"
+  },
+  {
+    "user_id": 7,
+    "user_name": "Avery_Dasher",
+    "bio": "Loyal DoorDash Dasher in Oakland Hills. 18 months tenure. Low elasticity — accepts most offers in home zone regardless of amount. Rarely switches zones. Stable and predictable. Daily income goal: $90.",
+    "persona": "loyal_stable_dasher"
+  },
+  {
+    "user_id": 8,
+    "user_name": "Skyler_Dasher",
+    "bio": "Student Dasher in SF Sunset. Works between classes, unpredictable schedule. Very price sensitive and zone-flexible. Will chase the highest incentive across all zones. Daily income goal: $50.",
+    "persona": "student_chaser_dasher"
+  },
+  {
+    "user_id": 9,
+    "user_name": "Drew_Dasher",
+    "bio": "Veteran Dasher in San Jose South. 3 years experience. Knows the optimal zones and times. Low fatigue, high endurance. Moderate elasticity but strategic about zone selection. Daily income goal: $130.",
+    "persona": "veteran_strategic_dasher"
+  }
+]

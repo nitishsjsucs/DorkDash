@@ -1,0 +1,39 @@
+services:
+  # ---- OASIS Sidecar (Python 3.11, camel-oasis) ----
+  # Provides large-scale agent simulation via OASIS engine.
+  # Our platform's OASISBridge connects to this on port 5050.
+  oasis-sidecar:
+    build:
+      context: ./oasis-sidecar
+      dockerfile: Dockerfile
+    ports:
+      - "5050:5050"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_API_BASE_URL=${OPENAI_API_BASE_URL:-}
+    volumes:
+      - ./oasis-sidecar:/app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5050/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # ---- MiroFish (Swarm Intelligence Engine) ----
+  # Uses the official prebuilt image from the MiroFish project.
+  # Backend API exposed on 5001. Optional Vue UI on 3001 (remapped from 3000).
+  mirofish:
+    image: ghcr.io/666ghj/mirofish:latest
+    container_name: mirofish
+    ports:
+      - "3001:3000"  # MiroFish UI (remapped to avoid conflict with our Next.js frontend)
+      - "5001:5001"  # MiroFish backend API
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - LLM_API_KEY=${OPENAI_API_KEY}
+      - LLM_BASE_URL=https://api.openai.com/v1
+      - LLM_MODEL=gpt-4o-mini
+      - ZEP_API_KEY=${ZEP_API_KEY:-disabled}
+      - ZEP_API_URL=${ZEP_API_URL:-http://localhost:8080}
+    restart: unless-stopped
